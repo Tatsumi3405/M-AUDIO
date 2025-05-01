@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh; /* Full height of viewport */
+        }
+
+        .sidebar {
+            width: 250px; /* Fixed width for sidebar */
+            background: linear-gradient(to left, #1a1919, rgba(26, 25, 25, 0.8)); /* Faded dark shade */
+            color: #424141; /* Updated to gray text color */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            padding-top: 20px; /* Add spacing at the top */
+            font-family: 'Courier New', Courier, monospace; /* Updated font for sidebar */
+        }  
+
+        .logo {
+            width: 150px; /* Circular logo size */
+            height: 150px;
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover; /* Ensures logo fits within its container */
+            margin-bottom: 20px; /* Adds spacing below logo */
+            box-shadow: 0 0 15px rgba(19, 19, 19, 0.5), 
+                        -5px -5px 10px rgba(0, 0, 0, 0.7),
+                        5px 5px 10px rgba(0, 0, 0, 0.7); /* Shadow on all sides */
+}
+        .nav {
+            list-style: none; /* Removes bullet points */
+            width: 75%; /* Centers navigation links */
+            text-align: center;
+        }
+
+        .nav-item {
+            margin-bottom: 10px; /* Adds spacing between navigation buttons */
+        }
+
+        .nav-link {
+            display: block;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            width: 100%;
+            border-radius: 10px; /* Curved corners */
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #444; /* Slightly lighter gray on hover */
+            box-shadow: 3px 3px 3px rgba(252, 252, 252, 0.849); /* Subtle shadow effect on hover */
+        }
+
+        .main-content {
+            flex-grow: 1; /* Takes up remaining space next to sidebar */
+            background-image: url('33.jpg'); /* Replace with your image path */
+            background-size: cover; /* Ensures image covers entire area */
+            background-position: center; /* Centers the image within its container */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .main-logo {
+            width: 280px; /* Adjust size as needed */
+            height: 280px;
+            object-fit: contain; /* Ensure full image is visible */
+            margin-bottom: 0px;
+        }
+
+        .welcome-text {
+            font-size: 32px; /* Increased font size */
+            font-weight: bold;
+            font-family: 'Georgia', serif; /* Different font style */
+        }
+
+        .admin-text {
+            font-size: 48px; /* Increased font size */
+            font-weight: bold;
+            font-family: 'Impact', sans-serif; /* Distinctive, non-plain font */
+            letter-spacing: 5px; /* Adds more space between letters */
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="436264411_950515963748200_1965576046051139400_n (1).jpg" alt="Logo" class="logo">
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">OVERVIEW</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">BOOKINGS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">SALES</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CONTROL</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">LOG OUT</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <img src="1732156839119.png" alt="Logo" class="main-logo">
+        <p class="welcome-text">WELCOME!</p>
+        <p class="admin-text">ADMIN</p>
+    </div>
+</body>
+</html>
